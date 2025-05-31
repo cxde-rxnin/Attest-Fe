@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Lamp } from "./Lamp"
 import { TypewriterEffect } from "./TypewriterEffect"
 import { Button } from "./ui/Button"
+import Link from "next/link"
 
 export function HeroSection() {
   const words = [
@@ -58,19 +59,14 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg"
-            >
-              Start Attesting
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-gray-300 hover:border-blue-600 px-8 py-3 rounded-full text-lg"
-            >
-              Learn More
-            </Button>
+            <Link href="https://dexichain.vercel.app" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg"
+              >
+                Start Attesting
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
