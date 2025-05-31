@@ -59,14 +59,14 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <Link href="https://dexichain.vercel.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://dexichain.vercel.app" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg"
               >
                 Start Attesting
               </Button>
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>
